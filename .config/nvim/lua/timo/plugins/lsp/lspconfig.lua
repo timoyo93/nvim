@@ -109,3 +109,14 @@ lspconfig["sumneko_lua"].setup({
     },
   },
 })
+
+-- configure angular language server
+lspconfig["angularls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+lspconfig["gopls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
